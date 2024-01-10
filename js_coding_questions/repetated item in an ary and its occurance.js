@@ -27,7 +27,18 @@ let result=aryNums.reduce((allnums,num)=>{
 console.log(result);
 // output ==={ '1': 1, '2': 4, '4': 2, '6': 2, '8': 1, '9': 2 }
 
+// Write, Edit and Run your Javascript code using JS Online 
 
+let array=[2,4,6,8,9,4,6,1,2,2,9,2]
+
+let obj={};
+function occurance(ar){
+    ar.forEach((item)=>{
+        obj[item]=(obj[item]||0)+1
+    })
+    return obj
+}
+console.log(occurance(array))
 
 //for  string occurance 
 
